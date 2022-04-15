@@ -1,0 +1,437 @@
+&nbsp;
+<hr />
+<p style="text-align: center;">A work by <a href="https://github.com/andburch/">Andrew T Burchill</a></p>
+<p style="text-align: center;"><span style="color: #808080;"><em>aburchil@asu.edu</em></span></p>
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+  /* cyrillic-ext */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/s/vollkorn/v9/0yb9GDoxxrvAnPhYGxkkaE0GrQ.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/s/vollkorn/v9/0yb9GDoxxrvAnPhYGxktaE0GrQ.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/s/vollkorn/v9/0yb9GDoxxrvAnPhYGxkqaE0GrQ.woff2) format('woff2');
+  unicode-range: U+0370-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/s/vollkorn/v9/0yb9GDoxxrvAnPhYGxkmaE0GrQ.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/s/vollkorn/v9/0yb9GDoxxrvAnPhYGxknaE0GrQ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Vollkorn Regular'), local('Vollkorn-Regular'), url(https://fonts.gstatic.com/s/vollkorn/v9/0yb9GDoxxrvAnPhYGxkpaE0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+  
+</style>
+<style>
+/*
+ *  Academicons 1.8.0 by James Walsh - https://github.com/jpswalsh
+ *  Fonts generated using the IcoMoon app - http://icomoon.io/app
+ *  Square icons designed to be used alongside Font Awesome square icons - https://fortawesome.github.io/Font-Awesome/
+ *  Licenses - Font: SIL OFL 1.1, CSS: MIT License
+*/
+@font-face {
+    font-family: 'Academicons';
+    src:url('https://andburch.github.io/fonts/academicons.eot?v=1.8.0');
+    src:url('https://andburch.github.io/fonts/academicons.eot?v=1.8.0') format('embedded-opentype'),
+        url('https://andburch.github.io/fonts/academicons.ttf?v=1.8.0') format('truetype'),
+        url('https://andburch.github.io/fonts/academicons.woff?v=1.8.0') format('woff'),
+        url('https://andburch.github.io/fonts/academicons.svg?v=1.8.0#academicons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.ai {
+	display:inline-block;
+	font:normal normal normal 14px/1 Academicons;
+	font-size:inherit;
+	text-rendering:auto;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+.ai-academia:before {
+  content: "\e800";
+}
+.ai-academia-square:before {
+  content: "\e801";
+}
+.ai-acclaim:before {
+  content: "\e802";
+}
+.ai-acclaim-square:before {
+  content: "\e803";
+}
+.ai-acm:before {
+  content: "\e804";
+}
+.ai-acm-square:before {
+  content: "\e805";
+}
+.ai-ads:before {
+  content: "\e806";
+}
+.ai-ads-square:before {
+  content: "\e807";
+}
+.ai-arxiv:before {
+  content: "\e808";
+}
+.ai-arxiv-square:before {
+  content: "\e809";
+}
+.ai-biorxiv:before {
+  content: "\e810";
+}
+.ai-biorxiv-square:before {
+  content: "\e811";
+}
+.ai-ceur:before {
+  content: "\e812";
+}
+.ai-ceur-box:before {
+  content: "\e813";
+}
+.ai-courser:before {
+  content: "\e814";
+}
+.ai-courser-square:before {
+  content: "\e815";
+}
+.ai-dataverse:before {
+  content: "\e816";
+}
+.ai-dataverse-box:before {
+  content: "\e817";
+}
+.ai-dblp:before {
+  content: "\e818";
+}
+.ai-dblp-square:before {
+  content: "\e819";
+}
+.ai-depsy:before {
+  content: "\e820";
+}
+.ai-depsy-square:before {
+  content: "\e821";
+}
+.ai-doi:before {
+  content: "\e822";
+}
+.ai-doi-square:before {
+  content: "\e823";
+}
+.ai-dryad:before {
+  content: "\e824";
+}
+.ai-dryad-square:before {
+  content: "\e825";
+}
+.ai-figshare:before {
+  content: "\e826";
+}
+.ai-figshare-square:before {
+  content: "\e827";
+}
+.ai-google-scholar:before {
+  content: "\e828";
+}
+.ai-google-scholar-square:before {
+  content: "\e829";
+}
+.ai-ieee:before {
+  content: "\e830";
+}
+.ai-ieee-square:before {
+  content: "\e831";
+}
+.ai-impactstory:before {
+  content: "\e832";
+}
+.ai-impactstory-square:before {
+  content: "\e833";
+}
+.ai-inspire:before {
+  content: "\e834";
+}
+.ai-inspire-square:before {
+  content: "\e835";
+}
+.ai-mendeley:before {
+  content: "\e836";
+}
+.ai-mendeley-square:before {
+  content: "\e837";
+}
+.ai-open-access:before {
+  content: "\e838";
+}
+.ai-open-access-square:before {
+  content: "\e839";
+}
+.ai-orcid:before {
+  content: "\e840";
+}
+.ai-orcid-square:before {
+  content: "\e841";
+}
+.ai-osf:before {
+  content: "\e842";
+}
+.ai-osf-square:before {
+  content: "\e843";
+}
+.ai-overleaf:before {
+  content: "\e844";
+}
+.ai-overleaf-square:before {
+  content: "\e845";
+}
+.ai-philpapers:before {
+  content: "\e846";
+}
+.ai-philpapers-square:before {
+  content: "\e847";
+}
+.ai-piazza:before {
+  content: "\e848";
+}
+.ai-piazza-square:before {
+  content: "\e849";
+}
+.ai-publons:before {
+  content: "\e850";
+}
+.ai-publons-square:before {
+  content: "\e851";
+}
+.ai-pubmed:before {
+  content: "\e852";
+}
+.ai-pubmed-square:before {
+  content: "\e853";
+}
+.ai-researchgate:before {
+  content: "\e854";
+}
+.ai-researchgate-square:before {
+  content: "\e855";
+}
+.ai-scirate:before {
+  content: "\e856";
+}
+.ai-scirate-square:before {
+  content: "\e857";
+}
+.ai-springer:before {
+  content: "\e858";
+}
+.ai-springer-square:before {
+  content: "\e859";
+}
+.ai-zotero:before {
+  content: "\e860";
+}
+.ai-zotero-square:before {
+  content: "\e861";
+}
+/*  Duplication of the FontAwesome style classes using 'ai' in place of 'fa'. */
+.ai-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.ai-2x {
+  font-size: 2em;
+}
+.ai-3x {
+  font-size: 3em;
+}
+.ai-4x {
+  font-size: 4em;
+}
+.ai-5x {
+  font-size: 5em;
+}
+.ai-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.ai-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.ai-ul > li {
+  position: relative;
+}
+.ai-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.ai-li.fa-lg {
+  left: -1.85714286em;
+}
+.ai-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.ai-pull-left {
+  float: left;
+}
+.ai-pull-right {
+  float: right;
+}
+.ai.fa-pull-left {
+  margin-right: .3em;
+}
+.ai.fa-pull-right {
+  margin-left: .3em;
+}
+/*  
+ *  Repeat of the FontAwesome style classes to prevent override if academicons.css
+ *  is called after font-awesome.css.
+ */
+.fa-lg {
+  font-size: 1.33333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.28571429em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14285714em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714286em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.fa-pull-left {
+  float: left;
+}
+.fa-pull-right {
+  float: right;
+}
+.fa.fa-pull-left {
+  margin-right: .3em;
+}
+.fa.fa-pull-right {
+  margin-left: .3em;
+}
+  
+  
+</style>
+
+
+
+
+<style>
+label[for=pubs-toggle] {
+  cursor: pointer;
+  }
+#pubs-toggle {
+  display: none; 
+  }
+#pubs {
+  transition-duration: .7s;
+  transition-property: font-size, opacity;
+  font-size: 0pt;
+  opacity: 0;
+  }
+#pubs-toggle:not(:checked) ~ #pubs {
+  font-size: 100%;
+  opacity: 1;
+  }  
+</style>
+
+
+<!-- Add font awesome icons -->
+<p style="text-align: center;">
+    <a href="https://twitter.com/AndrewBurchill?lang=en" class="fa fa-twitter"></a>
+   
+   
+  <label for="pubs-toggle"> 
+<a class="fa fa-graduation-cap"></a>
+    </label>
+     <a href="https://github.com/andburch/" class="fa fa-github"></a>
+    <input id="pubs-toggle" type="checkbox" checked />
+    <span id="pubs">
+      <br />
+        <span><a href="https://orcid.org/0000-0002-4197-6689"><span class="ai ai-orcid ai-lg main-list-item-icon"></span></a></span> 
+        <span><a href="https://scholar.google.com/citations?user=zbe4q7YAAAAJ"><span class="ai ai-google-scholar ai-lg main-list-item-icon"></span></a></span>
+	 <span><a href="https://www.researchgate.net/profile/Andrew_Burchill"><span class="ai ai-researchgate ai-lg main-list-item-icon" ></span></a></span>
+    </span>  
+
+</p>
+
+
+ 
+ 
+&nbsp;

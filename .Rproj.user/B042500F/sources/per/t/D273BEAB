@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1565981323317.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "36|37|40|0|\n64|51|74|0|\n122|47|127|0|\n139|33|142|0|\n145|66|150|0|\n",
+    "hash" : "1396751177",
+    "id" : "D273BEAB",
+    "lastKnownWriteTime" : 1565981226,
+    "last_content_update" : 1565983688365,
+    "path" : "~/Side Projects/spider-ant-mimic/Trajectory_analysis.R",
+    "project_path" : "Trajectory_analysis.R",
+    "properties" : {
+        "cursorPosition" : "99,5",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

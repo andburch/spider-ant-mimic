@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1593376201005.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "36|38|74|0|\n87|74|174|0|\n175|33|208|0|\n283|37|323|0|\n324|42|332|0|\n333|33|358|0|\n",
+    "hash" : "1525137569",
+    "id" : "526FD0EF",
+    "lastKnownWriteTime" : 1606945207,
+    "last_content_update" : 1607020609075,
+    "path" : "~/Side Projects/spider-ant-mimic/publication-code.R",
+    "project_path" : "publication-code.R",
+    "properties" : {
+        "cursorPosition" : "283,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled3"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 6,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
