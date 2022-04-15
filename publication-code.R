@@ -73,9 +73,7 @@ dendro_analysis <- function(per.ind) {
   
   
 }
-  
 
-########
 
 MATLAB_results_path <- "sync/ant_time_series.txt"
 
@@ -213,7 +211,27 @@ PCA_it <- function(pca.prepped, title="", ...){
     prcomp(scale. = TRUE, center=TRUE) 
   
   
-  file<-paste0(title,"PCA.png", collapse = "-")
+#for some FUCKIN' reason, fviz only implements the palette I give it on the SECOND time I call the function?? whatever, this works
+  fviz_pca_ind(prcomped,
+               label="none",
+               title=title,
+               col.ind = pca.prepped$species, # color by groups
+               addEllipses = TRUE, # Concentration ellipses
+               ellipse.type = "convex",
+               ellipse.level=0.99,
+               legend.title = "Groups",
+               repel = TRUE,
+               axes.linetype=NA,
+               palette = palette(c( "#76480d",
+                                    "#dc3c07",
+                                    "#f8ba7c",
+                                    "#256676",
+                                    "#4bd6fd",
+                                    "#6a9fee"
+               )),
+  ) 
+  
+  file<-paste0("figs/",title,"PCA.png", collapse = "-")
   ragg::agg_png(file, width= 1900, height = 1080, res=300)
   
   fviz_pca_ind(prcomped,
@@ -243,13 +261,14 @@ PCA_it <- function(pca.prepped, title="", ...){
     bind_cols(Species = pca.prepped$species, PC1 = prcomped$x[, 1])
   
   
-  file<-paste0(title,"boxplot.png", collapse = "-")
+  file<-paste0("figs/",title,"boxplot.png", collapse = "-")
   ragg::agg_png(file, width= 1900, height = 1080, res=300)
   
   
   print(
-    ggplot(PC1_results, aes(x = Species, y = PC1)) +
-      geom_boxplot(lwd = 1.5) + scale_fill_manual(values = palette(
+    ggplot(PC1_results, aes(x = Species,color=Species, y = PC1)) +
+      geom_boxplot(lwd = 1.5) + theme_classic(base_size = 15) +
+       scale_color_manual(values = palette(
         c(
           "#76480d",
           "#f8ba7c",
@@ -258,7 +277,7 @@ PCA_it <- function(pca.prepped, title="", ...){
           "#6a9fee",
           "#256676"
         )
-      )) + theme_classic(base_size = 15) + theme(legend.position = "none")
+      )) + theme(legend.position = "none")
   )
   dev.off()
   # boxplot(PC1 ~ Species, data=PC1_results, main="PC1 values across species")
@@ -355,13 +374,15 @@ MATLAB_PCA <- function(temp.db) {
 }
 temp.db <- NULL
 
+
+##############
 raw_data <- readRDS("raw_data.RDS") 
 
 big.db <- 
   TrajsMergeStats(raw_data$traj, stat_generator) %>%
   bind_cols(raw_data, .)
 
-big.db %>% start_stop_PCA()
+#big.db %>% filter(species!="C. bigenus") %>%  start_stop_PCA()
 
 big.db %>% import_MATLAB(MATLAB_results_path) %>% MATLAB_PCA()
 
